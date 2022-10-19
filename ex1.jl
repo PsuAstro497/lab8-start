@@ -501,7 +501,7 @@ if ismissing(response_2f)  still_missing()   end
 
 # ╔═╡ 7a17bf14-b749-4136-bfde-e5599a8738be
 md"""
-**Q2g:** What changes could be made that would allow JLD2 to store the data more in less space than CSV?  
+**Q2g:** What changes could be made that would allow JLD2 to store the same data using less disk space than CSV?  
 """
 
 # ╔═╡ ec00c9a5-2140-4b34-bab4-9a89e09eecdc
