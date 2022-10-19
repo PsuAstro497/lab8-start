@@ -366,7 +366,7 @@ In general, a floating point value stored as a `Float64` (commonly referred to a
 """
 
 # ╔═╡ 9b411269-f1bc-4e1b-93c8-78f5407597cb
-response_2a = "" #missing
+response_2a = missing
 
 # ╔═╡ 7cda896c-59e4-4c08-8237-7869589604ba
 if ismissing(response_2a)  still_missing()   end
@@ -377,7 +377,7 @@ md"""
 """
 
 # ╔═╡ 28af4229-5de4-47ef-9fc8-4033901c50b8
-response_2b = "" #missing
+response_2b = missing
 
 # ╔═╡ 8bfde242-e2ec-4556-8b54-bbafbe1b1ddc
 if ismissing(response_2b)  still_missing()   end
@@ -511,7 +511,7 @@ response_2g = missing
 if ismissing(response_2g)  still_missing()   end
 
 # ╔═╡ 8cbb1c90-bd94-44b5-80b6-81d38f3e6252
-md"2h.  How long do you think it will take to load the data from the JLD2 file? "
+md"**Q2h.**  How long do you think it will take to load the data from the JLD2 file? "
 
 # ╔═╡ c3065acf-6205-455f-ba74-ca51f3f6761b
 response_2h = missing
@@ -565,7 +565,7 @@ if ismissing(response_3c)  still_missing()   end
 protip(md"""
 The JLD2 format includes more extra metadata (e.g., information about the variable type for each column of the dataframe), explaining the slightly larger file size.  However, this difference is so small that it will have a negligible impact on the runtimes.  This is extremely convenient since it allows you to read and write a DataFrame (or any other Julia data type) without having to write special functions to store each type. 
 
-I'm not entirely sure why the runtime for reading/writing JLD2 files is significantly greater than for FITS files.   I'm guessing some combination of the FITS format being tuned for common variable types and the CFITSIO library being more mature and better optimized than the JLD2 code.
+I'm not entirely sure why the runtime for reading/writing a small JLD2 file of floats is significantly greater than for FITS files.   I'm guessing some combination of the FITS format being tuned for common variable types and the CFITSIO library being more mature and better optimized than the JLD2 code.
 ""","Why did FITS outperform HDF5/JLD2?")
 
 # ╔═╡ c272215b-6d9a-4be5-ab7b-bb17319cd294
@@ -588,7 +588,7 @@ md"""
 """
 
 # ╔═╡ d69bc955-6119-4327-bfd4-ca4723bbaac1
-response_3e = "" #missing
+response_3e = missing
 
 # ╔═╡ e00bdaa1-fa0a-404d-9da2-595c416a2097
 if ismissing(response_3e)  still_missing()   end
